@@ -126,7 +126,12 @@ h1 {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
+.main_img--container {
+        width: 100%;
+        height: auto;
+}
+
+@media screen and (max-width: 1280px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -204,6 +209,14 @@ h1 {
         margin: 0;
     }
 
+    .main_img--container {
+        height: 100%;
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+    }
+
     .navbar__toggle .bar {
         display: block;
         cursor: pointer;
@@ -232,7 +245,6 @@ h1 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
-    margin: 0 auto;
     height: 90vh;
     background-color: #141414;
     z-index: 1;
@@ -328,12 +340,22 @@ h1 {
 @media screen and (max-width: 768px) {
     .main__container {
         display: grid;
-        grid-template-columns: auto;
+       /* grid-template-columns: auto;*/ 
         align-items: center;
         justify-self: center;
         width: 100%;
         margin: 0 auto;
         height: 90vh;
+    }
+
+    .main_img--container {
+        height: auto;
+        max-width: 100%;
+        align-self: auto;
+    }
+    .container {
+        height: auto;
+        max-width: 80%; width: 80%;
     }
 
     .main__content {
@@ -342,7 +364,7 @@ h1 {
     }
 
     .main__content h1 {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         margin-top: 2rem;
     }
 
@@ -375,6 +397,7 @@ h1 {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
 }
 
 /* Services now turned to gallery Section CSS */
@@ -527,6 +550,7 @@ h1 {
 .social__media {
     max-width: 1000px;
     width: 100%;
+    display: flex;
 }
 
 .social__media--wrap {
