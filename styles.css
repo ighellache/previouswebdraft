@@ -17,6 +17,37 @@
     color: white;
 }
 
+.comment__box h3 {
+    color: white;
+}
+
+.myForm {
+    color: white;
+}
+
+#userComment {
+    color: white;
+}
+
+#submitbutton {
+    color: white;
+}
+
+.comment__box h5 {
+    color: white;
+}
+
+#userName {
+    color: white;
+}
+
+#userEmail {
+    color: white;
+}
+
+#data {
+    color: white;
+}
 /* This is where the typewriter effect starts */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
